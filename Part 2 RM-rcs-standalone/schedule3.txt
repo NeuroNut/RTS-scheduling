@@ -1,0 +1,20 @@
+Schedule (Hyperperiod: 20):
+TaskJob | Start-End | Context Switch
+T1j1 | 0.0-1.0
+T2j1 | 1.0-3.0 | CS
+T3j1 | 3.0-6.0 | CS
+T1j2 | 6.0-6.5 | CS
+T2j2 | 6.5-8.0 | CS
+T1j3 | 8.0-8.5 | CS
+T2j3 | 8.5-10.0 | CS
+T1j4 | 10.0-10.5 | CS
+Idle | 10.5-12.0
+T3j1 | 12.0-16.0 | CS
+T1j5 | 16.0-16.5 | CS
+T2j4 | 16.5-18.0 | CS
+Idle | 18.0-20.0
+
+
+Analysis:
+Total Context Switches: 9
+Total Idle Time: 3.5
